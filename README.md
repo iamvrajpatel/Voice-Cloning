@@ -33,6 +33,18 @@ uvicorn cloning_api:app --port 8000 --host 0.0.0.0
 - Access the interactive API docs at [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs).
 - Use the provided endpoints to perform cloning operations.
 
+### Example: Clone Voice Using `curl`
+
+```bash
+curl --location 'http://localhost:8000/clone-voice' \
+--form 'text="एक बार की बात है एक राजा था। उसका एक बड़ा-सा राज्य था। एक दिन उसे देश घूमने का विचार आया और उसने देश भ्रमण की योजना बनाई और घूमने निकल पड़ा। जब वह यात्रा से लौट कर अपने महल आया। उसने अपने मंत्रियों से पैरों में दर्द होने की शिकायत की। राजा का कहना था कि मार्ग में जो कंकड़ पत्थर थे वे मेरे पैरों में चुभ गए और इसके लिए कुछ इंतजाम करना चाहिए।"' \
+--form 'language="hi"' \
+--form 'reference_audio=@"D:/Python/dia1.6/Narendra_Modi_voice.ogg"'
+```
+
+- Replace the `reference_audio` path with your own reference audio file.
+- The response will be a WAV file containing the cloned voice.
+
 ## Project Structure
 
 - `cloning_api.py`: Main FastAPI application with cloning endpoints.
