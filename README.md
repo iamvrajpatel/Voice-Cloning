@@ -10,14 +10,32 @@ This project provides a RESTful API for cloning operations using FastAPI. The AP
 
 ## Requirements
 
-- Python 3.7+
-- FastAPI
-- Uvicorn
+- **Python version:** 3.11.9  
+  Make sure you have Python 3.11.9 installed. You can download it from [python.org](https://www.python.org/downloads/release/python-3119/).
 
-Install dependencies:
-```bash
-pip install -r requirements.txt
-```
+## Installation
+
+1. **Set up a virtual environment** (recommended):
+
+   ```sh
+   python3.11 -m venv .venv
+   source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+   ```
+
+2. **Clone the repository** (if applicable):
+
+   ```sh
+   git clone https://github.com/iamvrajpatel/Voice-Cloning.git
+   cd Voice-Cloning
+   ```
+
+3. **Install dependencies:**
+
+   ```sh
+   pip install -r requirements.txt
+   ```
+
+   If you need development or extra dependencies, check for additional requirements files or documentation.
 
 ## Running the API
 
