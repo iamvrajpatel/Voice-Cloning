@@ -68,6 +68,9 @@ curl --location 'http://localhost:8000/clone-voice' \
 - `cloning_api.py`: Main FastAPI application with cloning endpoints.
 - `README.md`: Documentation and usage instructions.
 
+## Used Configuration of GPU
+- [Used RunPod Configuration](https://console.runpod.io/deploy?gpu=RTX%20A4500&count=1&template=runpod-torch-v280)
+
 ## License
 
 This project is for educational and demonstration purposes.
